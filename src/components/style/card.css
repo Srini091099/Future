@@ -1,0 +1,47 @@
+.section {
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    grid-gap: 20px; /* Add some gap between the cards */
+    grid-template-rows: auto;
+}
+
+.cards {
+    width: 250px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease-in-out; /* Add transition for smooth effect */
+    
+}
+
+.cards:hover {
+    box-shadow: 0 10px 10px rgba(197, 111, 12, 0.842);
+    cursor: pointer;
+    background-color: rgb(133, 154, 194);
+}
+
+.image_box img {
+    width: 150px;
+    height: 200px;
+   
+}
+
+.details p:nth-child(2) {
+    color: grey;
+    font-size: 0.8rem;
+}
+
+.details p:nth-child(3) {
+    font-weight: bold;
+    color: grey;
+}
+
+.details button {
+    padding: 5px 10px;
+    border: none;
+    font-weight: bold;
+    background-color: skyblue;
+    outline: white;
+    border-radius: 2px;
+}

@@ -1,24 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
 
+import { Routerapp } from './components/router/router';
+import Filterpage from './components/extras/filterpage';
+import { Provider } from 'react-redux';
+import Filtercategory from './components/extras/filterpage/Filtercategory';
+import store from '../src/components/redux/store'; // Import your Redux store
+import { Intropages } from './components/pages/pages';
+
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+ <>
+ <Routerapp>
+ <Intropages/>
+ </Routerapp>
+ </>
+   
   );
 }
 

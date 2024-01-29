@@ -1,0 +1,36 @@
+/* categorypage.css */
+
+.container {
+  position: relative;
+  width: 250px;
+  height: 200px;
+  overflow: hidden;
+  border-bottom: 20px solid rgb(199, 219, 83);
+  margin-top: 20px;
+}
+
+.image {
+  width: 250px;
+  height: 250px;
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 10px 10px rgba(224, 228, 31, 0.842);
+  cursor: pointer;
+  background-color: rgb(3, 80, 223);
+}
+
+.label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.container:hover .label {
+  opacity: 1; /* Show label on hover */
+}

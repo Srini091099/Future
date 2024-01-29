@@ -1,0 +1,22 @@
+/* filtercategory.module.css */
+
+.filter_text {
+    background-color: azure;
+}
+
+.filter_hover {
+    box-shadow: 0 1px 1px rgba(197, 111, 12, 0.842);
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    transition: box-shadow 0.3s ease-in-out;
+    margin-bottom: 8px; 
+}
+
+.filter_hover:hover {
+    background-color: rgb(252, 178, 19);
+}
+.image_box img {
+    width: 150px;
+    height: 200px;
+   
+}
