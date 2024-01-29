@@ -64,19 +64,19 @@ export function Homepage() {
     <Sliderapp/>
   <div className="container">
     <div className="row mt-3">
-    <div className="col-md-2">
+    
+    <div className="col-md-4">
+    <Link  to='/Filter'><Categorypage image={categories_2} label="mens"/> </Link>
 
-   <span className="text-warning fw-bolder"> <Link  to='/Filter'>filter </Link></span>
+  
     </div>
+      
       <div className="col-md-4">
-<Categorypage image={categories_2} label="mens"/>
-      </div>
-      <div className="col-md-4">
-      <Categorypage image={categories_1} label="Womens"/>  
+      <Link  to='/Filter'><Categorypage image={categories_1} label="mens"/> </Link>
       </div>
 
       <div className="col-md-4">
-      <Categorypage image={categories_3} label="accesories"/>  
+      <Link  to='/Filter'><Categorypage image={categories_3} label="mens"/> </Link>
         </div>
     </div>
   </div>
