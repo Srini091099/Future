@@ -1,8 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 import '../pages/Navbar.css';
-import Cart from './cart';
-import Starttoo, { Tooglecart } from './toogle';
+
 
 const Navbar = ({ size, setShowCart }) => {
   return (

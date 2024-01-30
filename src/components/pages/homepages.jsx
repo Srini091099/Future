@@ -13,10 +13,7 @@ import  categories_3 from'../asset/categories_3.png'
 
 import emptyCartImage from '../asset/emptyCart.png';
 import { Categorypage } from "./categorypage";
-import { useDispatch } from "react-redux";
-import { setProduct } from "../redux/reducer";
-import axios from "axios"
-import { Rootapp } from "./rootpage/rootapp";
+
 
 
 
