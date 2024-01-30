@@ -10,9 +10,10 @@ function Cardpages({ item, handleClick }) {
 
   return (
     <>
-      <div className="cards">
+     <div className="cards">
         <div className="image_box">
-          <img src={item.thumbnail} alt="image" />
+          
+          <img src={item.thumbnail} alt="product" />
         </div>
         <div className="details">
           <p>{item.title}</p>

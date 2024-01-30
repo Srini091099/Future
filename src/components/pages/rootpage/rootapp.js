@@ -1,5 +1,3 @@
-/* global store */
-
 import React from 'react';
 import { Provider } from 'react-redux';
 import Filterpage from '../../extras/filterpage';
