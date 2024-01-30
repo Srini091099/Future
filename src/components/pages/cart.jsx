@@ -4,20 +4,21 @@ import styles from '../style/cart.module.css';
 function Cart({ cart, setCart }) {
   const [amount, setAmount] = useState(0);
 
-  const handlePrice = () => {
+  const handlePrice = useCallback(() => {
     let totalAmount = 0;
     cart.forEach((item) => {
       totalAmount += item.price * (item.amount || 1);
     });
     setAmount(totalAmount);
-  };
+  }, [cart]);
 
   const handleremove = () => {
     let removetotal = 0;
     cart.forEach((item) => {
       removetotal -= item.price * (item.amount || 1);
     });
-    setAmount((prevAmount) => Math.max(prevAmount + removetotal, 0));  };
+    setAmount((prevAmount) => Math.max(prevAmount + removetotal, 0));
+  };
 
   const handleIncreaseQuantity = (itemId) => {
     setCart((prevCart) =>
@@ -37,7 +38,8 @@ function Cart({ cart, setCart }) {
 
   useEffect(() => {
     handlePrice();
-  }, [handlePrice, cart]);
+  }, [cart, handlePrice]);  // Add handlePrice as a dependency
+
 
   return (
     <div>

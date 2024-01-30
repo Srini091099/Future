@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import slider1 from '../asset/slider_1.jpg';
 import slider2 from '../asset/slider_2.jpg';
 import slider3 from '../asset/slider_3.jpg';
-import  styles from '../style/slider.module.css'
+
 export function Sliderapp() {
   const [index, setIndex] = useState(0);
 
