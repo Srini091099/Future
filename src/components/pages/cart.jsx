@@ -37,7 +37,7 @@ function Cart({ cart, setCart }) {
 
   useEffect(() => {
     handlePrice();
-  }, [cart]);
+  }, [handlePrice, cart]);
 
   return (
     <div>
