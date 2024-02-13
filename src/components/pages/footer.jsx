@@ -9,18 +9,26 @@ function Footer() {
         <div className="row">
           <div className="col-md-12 text-center">
             <h3>Contact Us</h3>
-            <span>Email:<a className="text-primary"> srinijohn0910@gmail.com</a>
+            <span>Email:<a href="mailto:srinijohn0910@gmail.com" className="text-primary"> srinijohn0910@gmail.com</a>
             </span>
             <p>Phone: 123-456-7890</p>
             <p>Address: 123 Main St, City, Country</p>
             <h3>Follow Us</h3>
             <ul className="list-inline">
-          <li className="list-inline-item"> <a href="https://example.com" className="btn btn-link">
+              <li className="list-inline-item"> 
+                <button className="btn ">
                   <WhatsApp/>
-                </a></li>
-              <li className="list-inline-item"><a href="https://example.com" className="btn btn-link"><Facebook/></a></li>
-              <li className="list-inline-item"><a href="https://example.com" className="btn btn-link"><Instagram/></a></li>
-              <li className="list-inline-item"><a href="https://example.com" className="btn btn-link"><LinkedIn/></a></li>
+                </button>
+              </li>
+              <li className="list-inline-item">
+                <button className="btn "><Facebook/></button>
+              </li>
+              <li className="list-inline-item">
+                <button className="btn "><Instagram/></button>
+              </li>
+              <li className="list-inline-item">
+                <button className="btn "><LinkedIn/></button>
+              </li>
             </ul>
           </div>
         </div>
