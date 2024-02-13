@@ -1,4 +1,3 @@
-// Routerapp.jsx
 import React, { useState } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Cart from '../pages/cart';
@@ -14,7 +13,6 @@ import Productpage from "../pages/productpage/productpage";
 export function Routerapp() {
   const [cart, setCart] = useState([]);
   const [showCart, setShowCart] = useState(false);
-  const [warning, setWarning] = useState(false);
 
   const handleClick = (item) => {
     const isItemPresentInCart = cart.some((product) => product.id === item.id);
@@ -28,28 +26,23 @@ export function Routerapp() {
   return (
     <>
       <Navbar size={cart.length} setShowCart={setShowCart} />
-      {cart.length > 0 ? (
-        showCart && <Cart cart={cart} setCart={setCart} />
-      ) : (
-        showCart && <img src={emptyCartImage} alt='empty cart' />
-      )}
-      {warning && <div className="text-warning fw-bolder">Item already available</div>}
+      {cart.length > 0 && showCart && <Cart cart={cart} setCart={setCart} />}
+      {cart.length === 0 && showCart && <img src={emptyCartImage} alt='empty cart' />}
       <div
         data-spy="scroll"
         data-target="#list-example"
         data-offset={0}
         className="scrollspy-example"
       ></div>
-    <Router>
-      <Routes>
-        <Route path="/" element={<Homepage handleClick={handleClick} />} /> 
-        <Route path="/Filter" element={<Rootapp  handleClick={handleClick}/> } />
-        
-        <Route path="/women" element={<Productwomen products={List.item} handleClick={handleClick} />} />
-        <Route path="/mens" element={<Productmen products={List.item} handleClick={handleClick}/>} />
-        <Route path="/item/:id" element={<Productpage  key={List.item.id} products={List.item} handleClick={handleClick}/>}/>
-      </Routes>
-    </Router>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Homepage handleClick={handleClick} />} /> 
+          <Route path="/Filter" element={<Rootapp  handleClick={handleClick}/> } />
+          <Route path="/women" element={<Productwomen products={List.item} handleClick={handleClick} />} />
+          <Route path="/mens" element={<Productmen products={List.item} handleClick={handleClick}/>} />
+          <Route path="/item/:id" element={<Productpage  key={List.item.id} products={List.item} handleClick={handleClick}/>}/>
+        </Routes>
+      </Router>
     </>
   );
 }

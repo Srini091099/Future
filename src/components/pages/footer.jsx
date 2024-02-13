@@ -15,10 +15,12 @@ function Footer() {
             <p>Address: 123 Main St, City, Country</p>
             <h3>Follow Us</h3>
             <ul className="list-inline">
-          <li className="list-inline-item"><a href="#"><WhatsApp/></a></li>
-              <li className="list-inline-item"><a href="#"><Facebook/></a></li>
-              <li className="list-inline-item"><a href="#"><Instagram/></a></li>
-              <li className="list-inline-item"><a href="#"><LinkedIn/></a></li>
+          <li className="list-inline-item"> <a href="https://example.com" className="btn btn-link">
+                  <WhatsApp/>
+                </a></li>
+              <li className="list-inline-item"><a href="https://example.com" className="btn btn-link"><Facebook/></a></li>
+              <li className="list-inline-item"><a href="https://example.com" className="btn btn-link"><Instagram/></a></li>
+              <li className="list-inline-item"><a href="https://example.com" className="btn btn-link"><LinkedIn/></a></li>
             </ul>
           </div>
         </div>
