@@ -16,9 +16,9 @@
 }
 
 .cards:hover {
-    box-shadow: 0 10px 10px rgba(197, 111, 12, 0.842);
+    box-shadow: 0 10px 10px black;
     cursor: pointer;
-    background-color: rgb(133, 154, 194);
+    background-color: rgb(5, 126, 100);
 }
 
 .image_box img {

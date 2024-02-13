@@ -3,15 +3,19 @@ import './App.css';
 
 import { Routerapp } from './components/router/router';
 
-import { Intropages } from './components/pages/pages';
+
+
+import Footer from './components/pages/footer';
 
 
 function App() {
   return (  
  <>
+ 
  <Routerapp>
- <Intropages/>
+
  </Routerapp>
+ <Footer/>
  </>
    
   );

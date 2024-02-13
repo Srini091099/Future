@@ -38,7 +38,7 @@ function Cart({ cart, setCart }) {
 
   useEffect(() => {
     handlePrice();
-  }, [cart, handlePrice]);  // Add handlePrice as a dependency
+  }, [cart, handlePrice]);  
 
 
   return (

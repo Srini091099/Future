@@ -1,19 +1,21 @@
 // Cardpages.jsx
-
 import React from 'react';
 import '../style/card.css';
+import { Link } from 'react-router-dom';
 
 function Cardpages({ item, handleClick }) {
   if (!item) {
-    return null; // or you can render a loading indicator or handle it in another way
+    return null; 
   }
 
   return (
     <>
-     <div className="cards">
+      <div className="cards">
         <div className="image_box">
-          
+          <Link to={`/item/${item.id}`}>
           <img src={item.thumbnail} alt="product" />
+          
+          </Link>
         </div>
         <div className="details">
           <p>{item.title}</p>

@@ -16,7 +16,7 @@ export function Sliderapp() {
         id="carouselExampleDark"
         className="carousel carousel-dark slide"
         data-bs-ride="carousel"
-        style={{ width: '80%', margin: '0 auto', }}
+        style={{ width: '80%', margin: '0 auto', marginBottom:'60px' ,marginTop:'20px'}}
       >
         <div className="carousel-indicators">
           

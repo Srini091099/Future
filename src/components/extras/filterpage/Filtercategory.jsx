@@ -19,7 +19,7 @@ function Filtercategory() {
   }, [dispatch]);
 
   return (
-    <div>
+    <div >
       <h5 className="filter_text">Filtercategory</h5>
       {catg.map((item) => (
         <div

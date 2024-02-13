@@ -3,7 +3,7 @@ import Filtercategory from './Filtercategory';
 import Filterpro from './filterpro';
 
 
-function Filterpage() {
+function Filterpage({handleClick}) {
   return (
     <div className='container-fluid'>
       <div className='row mt-4' style={{ marginBottom: '120px' }}>
@@ -11,7 +11,7 @@ function Filterpage() {
           <Filtercategory />
         </div>
         <div className='col-md-8'>
-          <Filterpro />
+          <Filterpro handleClick={handleClick}/>
         </div>
       </div>
     </div>

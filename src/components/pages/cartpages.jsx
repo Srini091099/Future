@@ -1,5 +1,5 @@
 import React from 'react';
-import Cart from './cart';  // Correct path assuming both files are in the same directory
+import Cart from './cart';  
 
 function CartPage({ cart, setCart }) {
     console.log(cart)

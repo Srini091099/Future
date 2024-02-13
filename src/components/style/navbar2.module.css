@@ -1,0 +1,20 @@
+/* UpwardNavbar.css */
+
+.nav2 {
+    background-color: rgba(239, 245, 245, 0.952);
+}
+
+.nav-link {
+    color: rgb(7, 105, 76);
+}
+
+.nav-link:hover {
+    color: rgb(7, 105, 76);
+    text-decoration: none;
+}
+
+.nav-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

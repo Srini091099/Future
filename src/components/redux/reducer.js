@@ -7,7 +7,8 @@ const productSlice = createSlice({
   initialState: {
     catg: [],
     selectedCatg: null,
-    list: [], // Ensure you have the 'list' field in your initial state
+    list: [],
+    properties: [],
   },
   reducers: {
     setselectedCatg(state, action) {
@@ -19,8 +20,11 @@ const productSlice = createSlice({
     setCatg(state, action) {
       state.catg = action.payload;
     },
+    setproperties(state, action) {
+      state.properties = action.payload;
+    },
   },
 });
 
-export const { setProduct, setCatg, setselectedCatg } = productSlice.actions;
+export const { setProduct, setCatg, setselectedCatg, setproperties } = productSlice.actions;
 export default productSlice.reducer;
